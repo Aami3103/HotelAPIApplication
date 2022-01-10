@@ -1,0 +1,10 @@
+create database Hotel;
+use Hotel;
+create table employees(id bigint primary key auto_increment,name varchar(233),surname varchar(233),email varchar(233),password varchar(233));
+select * from employees;
+create table guests(id bigint primary key auto_increment,name varchar(233),surname varchar(233),email varchar(233),phoneNumber varchar(233),address varchar(344),city varchar(233),country varchar(233),personalId varchar(233));
+select * from guests; 
+create table reservations(id bigint primary key auto_increment,startDate date,endDate date,roomId int,guestId int,price int);
+select * from reservations;
+create table rooms(id bigint primary key auto_increment,roomNumber int,floor int,people int,price int,is_available boolean);
+select* from rooms;
